@@ -1,6 +1,8 @@
 import socket
+port = "4040"
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((socket.gethostname(), 4040))
+s.bind((socket.gethostname(), port))
 s.listen(1)
 connection = False
 print("Making a socket was succesful! \n")

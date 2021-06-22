@@ -3,6 +3,9 @@ from threading import Timer
 import socket, time, sys
 #make a socket
 
+ip = "127.0.0.1"
+port = "4040"
+
 def make_socket():
     global s
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,7 +38,7 @@ def connect():
         try:
             print("Trying to connect")
             make_socket()
-            s.connect((socket.gethostname(), 4040)) #Connect to the receiver
+            s.connect((ip, port)) #Connect to the receiver
         except Exception:
             connection = False
             if reconnect_attempt <= 20:
