@@ -4,7 +4,7 @@ import socket, time, sys
 #make a socket
 
 ip = "127.0.0.1"
-port = "4040"
+port = 4040
 
 def make_socket():
     global s
