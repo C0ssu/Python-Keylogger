@@ -1,3 +1,4 @@
+import os
 import socket
 port = 4040
 
@@ -6,6 +7,20 @@ s.bind(("0.0.0.0", port))
 s.listen(1)
 connection = False
 print("Making a socket was succesful! \n")
+def open_log_file():
+    global log
+    try:
+        log = open("logs/log.txt", "w")
+    except FileNotFoundError:
+        print("Error opening the file")
+        if os.path.isdir("logs"):
+            log = open("logs/log.txt", "a+")
+        else:
+            os.mkdir("logs")
+            log = open("logs/log.txt", "a+")
+    except Exception as e:
+        print("Unknown error happened using/opening the file: ", e)
+
 print("Waiting for connections...")
 while True:
     if connection != True:
@@ -32,4 +47,9 @@ while True:
                 data = ""
                 continue
             else:
-                print(f"{address}: ", data.decode('UTF-8'))
+                received_data = str(address) + ": " + data.decode('UTF-8')
+                print(received_data)
+                open_log_file() #Open log file
+                log.write(received_data) #Write sent data
+                log.close() #Commit changes
+                # Hoida tää loppuun ^ Heittää erroria
