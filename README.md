@@ -1,5 +1,5 @@
 # Python-Keylogger
-Some shitty keylogger im making to learn python
+Keylogger im making to learn python
 //Add logging for receiving side
 <h2> <b>!! DISCLAIMER !!</b> </h2>
 <h3> <b> DONT DO ANYTHING ILLEGAL WITH THIS PROGRAM. THIS IS FOR EDUCATIONAL PURPOSES ONLY. YOU ARE RESPONSIBLE FOR EVERYTHING YOU DO WITH THIS PROGRAM </b> </h3>
