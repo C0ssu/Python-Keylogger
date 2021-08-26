@@ -1,6 +1,6 @@
 # Python-Keylogger
-Keylogger im making to learn python
-//Add logging for receiving side
+<p>Keylogger im making to learn python</p>
+<p><b>To do:</b> Add logging for receiving side
 <h2> <b>!! DISCLAIMER !!</b> </h2>
 <h3> <b> DONT DO ANYTHING ILLEGAL WITH THIS PROGRAM. THIS IS FOR EDUCATIONAL PURPOSES ONLY. YOU ARE RESPONSIBLE FOR EVERYTHING YOU DO WITH THIS PROGRAM </b> </h3>
 <h1> How to use </h1>
